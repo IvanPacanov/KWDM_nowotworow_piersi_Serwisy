@@ -8,6 +8,11 @@ namespace PACS.API.Data.Interfaces
 {
     public interface ICommanderPACS
     {
-        byte[] TakeImage(ImageInfo seriesModel);
+        List<string> Find();
+        List<string> FindStudy(string id);
+        List<string> FindSeries(string id, string studyInstanceUID);
+        List<string> FindInstances(string id, string studyInstanceUID, string seriesInstanceUID);
+        byte[] Move(string id, string studyInstanceUID, string seriesInstanceUID, string SOPInstanceUID);
+
     }
 }

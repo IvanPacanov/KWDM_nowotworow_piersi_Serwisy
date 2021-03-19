@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+
+  orderdb:
+    image: mcr.microsoft.com/mssql/server
+
+  user.api:
+    image: ${DOCKER_REGISTRY-}userapi
+    build:
+      context: .
+      dockerfile: src/User/User.API/Dockerfile
+
+  pacs.api:
+    image: ${DOCKER_REGISTRY-}pacsapi
+    build:
+      context: .
+      dockerfile: src/Pacs/PACS.API/Dockerfile
+        
+        
+

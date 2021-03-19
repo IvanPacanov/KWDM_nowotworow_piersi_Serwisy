@@ -1,0 +1,32 @@
+version: '3.4'
+
+services:
+
+
+
+  orderdb:
+        container_name: orderdb
+        ports:
+            - "1433:1433"
+        environment:
+            SA_PASSWORD: "Kolarz951159"
+            ACCEPT_EULA: "Y"
+  user.api:
+    restart: on-failure
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "ConnectionStrings:UserContext=Server=orderdb;Database=UserDb;User Id=sa;Password=Kolarz951159"      
+    depends_on:
+      - orderdb
+    volumes:
+      - ${HOME}/.microsoft/usersecret/:/root/.microsoft/usersecret
+      - ${HOME}/.aspnet/https:/root/.aspnet/https/
+    ports:
+      - "8000:80"
+
+  pacs.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development      
+    ports:
+      - "8001:80"
+

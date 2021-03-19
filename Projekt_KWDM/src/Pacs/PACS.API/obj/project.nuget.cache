@@ -1,15 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "8A4LcV5fEr53p5Va9ukqedNsHtVhGn6YXQbEsMamlhrHAC2vD9C0tH0vu3pmpfiq3XyzwhgK+z89np9cob4EgQ==",
+  "dgSpecHash": "dcD4rJ3RBH9b8Ra10wd+MwpjUXMK7znGR8LgaMasDFDOPPWHjVYsL9fSBTX0k9kaddBPUJFqXPD8AUuaQjaHQw==",
   "success": true,
-  "projectFilePath": "E:\\Study\\Uczelnia_mgr\\Semestr_3\\KWDM\\Projekt_KWDM\\src\\Pacs\\PACS.API\\PACS.API.csproj",
+  "projectFilePath": "E:\\Study\\Uczelnia_mgr\\Semestr_3\\KWDM\\KWDM_nowotworow_piersi_Serwisy\\Projekt_KWDM\\src\\Pacs\\PACS.API\\PACS.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mati\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Mati\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\Mati\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Mati\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
+    "C:\\Users\\Mati\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\Mati\\.nuget\\packages\\swashbuckle.aspnetcore\\6.1.1\\swashbuckle.aspnetcore.6.1.1.nupkg.sha512",
     "C:\\Users\\Mati\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.1.1\\swashbuckle.aspnetcore.swagger.6.1.1.nupkg.sha512",
     "C:\\Users\\Mati\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.1.1\\swashbuckle.aspnetcore.swaggergen.6.1.1.nupkg.sha512",
-    "C:\\Users\\Mati\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.1.1\\swashbuckle.aspnetcore.swaggerui.6.1.1.nupkg.sha512"
+    "C:\\Users\\Mati\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.1.1\\swashbuckle.aspnetcore.swaggerui.6.1.1.nupkg.sha512",
+    "C:\\Users\\Mati\\.nuget\\packages\\system.drawing.common\\5.0.2\\system.drawing.common.5.0.2.nupkg.sha512"
   ],
   "logs": []
 }

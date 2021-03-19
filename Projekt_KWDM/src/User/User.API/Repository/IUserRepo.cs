@@ -8,6 +8,6 @@ namespace User.API.Repository
     public interface IUserRepo
     {
         IEnumerable<Entities.User> GetAllUsers();
-        Entities.User GetUserByName(string name);
+        bool CheckUser(Entities.User user);
     }
 }

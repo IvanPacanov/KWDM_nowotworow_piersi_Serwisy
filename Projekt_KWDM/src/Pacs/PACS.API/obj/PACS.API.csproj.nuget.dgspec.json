@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Study\\Uczelnia_mgr\\Semestr_3\\KWDM\\Projekt_KWDM\\src\\Pacs\\PACS.API\\PACS.API.csproj": {}
+    "E:\\Study\\Uczelnia_mgr\\Semestr_3\\KWDM\\KWDM_nowotworow_piersi_Serwisy\\Projekt_KWDM\\src\\Pacs\\PACS.API\\PACS.API.csproj": {}
   },
   "projects": {
-    "E:\\Study\\Uczelnia_mgr\\Semestr_3\\KWDM\\Projekt_KWDM\\src\\Pacs\\PACS.API\\PACS.API.csproj": {
+    "E:\\Study\\Uczelnia_mgr\\Semestr_3\\KWDM\\KWDM_nowotworow_piersi_Serwisy\\Projekt_KWDM\\src\\Pacs\\PACS.API\\PACS.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Study\\Uczelnia_mgr\\Semestr_3\\KWDM\\Projekt_KWDM\\src\\Pacs\\PACS.API\\PACS.API.csproj",
+        "projectUniqueName": "E:\\Study\\Uczelnia_mgr\\Semestr_3\\KWDM\\KWDM_nowotworow_piersi_Serwisy\\Projekt_KWDM\\src\\Pacs\\PACS.API\\PACS.API.csproj",
         "projectName": "PACS.API",
-        "projectPath": "E:\\Study\\Uczelnia_mgr\\Semestr_3\\KWDM\\Projekt_KWDM\\src\\Pacs\\PACS.API\\PACS.API.csproj",
+        "projectPath": "E:\\Study\\Uczelnia_mgr\\Semestr_3\\KWDM\\KWDM_nowotworow_piersi_Serwisy\\Projekt_KWDM\\src\\Pacs\\PACS.API\\PACS.API.csproj",
         "packagesPath": "C:\\Users\\Mati\\.nuget\\packages\\",
-        "outputPath": "E:\\Study\\Uczelnia_mgr\\Semestr_3\\KWDM\\Projekt_KWDM\\src\\Pacs\\PACS.API\\obj\\",
+        "outputPath": "E:\\Study\\Uczelnia_mgr\\Semestr_3\\KWDM\\KWDM_nowotworow_piersi_Serwisy\\Projekt_KWDM\\src\\Pacs\\PACS.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Microsoft\\Xamarin\\NuGet\\"
@@ -44,9 +44,17 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.10.9, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.1.1, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[5.0.2, )"
             }
           },
           "imports": [

@@ -17,8 +17,9 @@ namespace User.API.Data
             {
                 // INFO: Run this if using a real database. Used to automaticly migrate docker image of sql server db.
                 userContext.Database.Migrate();
-                //orderContext.Database.EnsureCreated();
+             //  bool info = userContext.Database.EnsureCreated();
 
+                
                 if (!userContext.User.Any())
                 {
                     userContext.User.AddRange(GetPreconfiguredOrders());

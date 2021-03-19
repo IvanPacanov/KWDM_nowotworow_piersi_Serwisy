@@ -20,9 +20,14 @@ namespace User.API.Repository
             return _userContext.User.ToList();
         }
 
-        public Entities.User GetUserByName(string name)
+        public bool CheckUser(Entities.User user)
         {
-            return _userContext.User.FirstOrDefault(p => p.UserName == name);
+            var User = _userContext.User.FirstOrDefault(p => p.UserName == user.UserName && p.Password == user.Password);
+            if(User != null)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

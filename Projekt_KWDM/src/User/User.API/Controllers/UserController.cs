@@ -17,14 +17,17 @@ namespace User.API.Controllers
         public UserController(IUserRepo repository)
         {
             _repository = repository;
-        }
+        }       
 
-        [HttpGet("{userLogin}")]
+        [HttpPost]
         [ProducesResponseType(typeof(Entities.User), (int)HttpStatusCode.OK)]
-        public ActionResult<Entities.User> GetUser(string userLogin)
+        public ActionResult<Entities.User> GetUser([FromBody] Entities.User user)
         {
-            var user = _repository.GetUserByName(userLogin);
-            return Ok(user);
+            var IsUser = _repository.CheckUser(user);
+            if(IsUser)
+                return Ok(IsUser);
+
+            return  Ok("Niepoprawne dane logowania");
         }
     }
 }
