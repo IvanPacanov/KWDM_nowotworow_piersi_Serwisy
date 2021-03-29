@@ -1,4 +1,7 @@
 function [ac] = Classifier2(file)
+f = waitbar(0,'Proszę czekać...');
+pause(.5)
+
 load ExtractedFeatures;
 
 A=1:20;
@@ -21,6 +24,8 @@ MAP_iter=10; % max num of iterations
     PreProcessedImage(:,:,1)=file;
     PreProcessedImage(:,:,2)=file;
     PreProcessedImage(:,:,3)=file;
+waitbar(.33,f,'Klasyfikacja...');
+pause(1)
 
     
     stats= gmmsegmentation(Xk,PreProcessedImage,GMMk,k,g,beta,EM_iter,MAP_iter,ShapeTexture);
@@ -58,7 +63,8 @@ MAP_iter=10; % max num of iterations
     
 
     end
-
+waitbar(.53,f,'Klasyfikacja...');
+pause(1)
     [val1 index1]=max(diff1);
     [val2 index2]=max(diff2);
     [val3 index3]=max(diff3);
@@ -80,7 +86,8 @@ MAP_iter=10; % max num of iterations
     [val19 index19]=max(diff19);
     [val20 index20]=max(diff20);
 
-
+waitbar(.73,f,'Klasyfikacja...');
+pause(1)
 T = ind2vec(Tc);
 
 spread = 1;
@@ -111,10 +118,14 @@ p1(18) = index17;
 p1(19) = index18;
 p1(20) = index19;
 
-
+waitbar(.93,f,'Klasyfikacja...');
+pause(1)
 % pl = index20;
 a = sim(net,pl);
 ac = vec2ind(a);
+waitbar(1,f,'Koniec');
+pause(1)
 
+close(f)
 end
 

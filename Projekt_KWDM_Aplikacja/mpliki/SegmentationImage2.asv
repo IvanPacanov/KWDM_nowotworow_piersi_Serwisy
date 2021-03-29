@@ -22,7 +22,7 @@ pause(1)
         [X,Y,GMM]=HMRF_EM(X,Y,GMM,k,g,EM_iter,MAP_iter,beta);
 
         Y=Y*80;
-waitbar(.73,f,'Segmentacja zmian nowotworowych');
+waitbar(.33,f,'Segmentacja zmian nowotworowych');
 pause(1)
         Y=uint8(Y);
         
@@ -33,9 +33,6 @@ pause(1)
     ExtractedFeatures1=statsa;
 
 Y=uint8(Y);
-waitbar(1,f,'Koniec');
-pause(1)
 
-close(f)
 end
 

@@ -1,5 +1,7 @@
 function [PreProcessedImage] = AdaptiveMedianFilter2(InputImage)
-        GrayScaleImage=im2gray(InputImage);
+f = waitbar(0,'Proszę czekać...');
+pause(.5)  
+GrayScaleImage=im2gray(InputImage);
         NoisyImage=GrayScaleImage;
         NoisyImage=double(GrayScaleImage);
         [R C P]=size(NoisyImage);
@@ -8,7 +10,8 @@ function [PreProcessedImage] = AdaptiveMedianFilter2(InputImage)
         Zmax=[];
         Zmed=[];
         
-
+waitbar(.33,f,'Filtrowanie obrazu');
+pause(1)
         for i=1:R
         
             for j=1:C
@@ -51,7 +54,6 @@ function [PreProcessedImage] = AdaptiveMedianFilter2(InputImage)
 
 
                        else
-
 
 
                                      SR1 = NoisyImage((i-1),(j-1));
@@ -120,17 +122,20 @@ function [PreProcessedImage] = AdaptiveMedianFilter2(InputImage)
             end
         end
         
-        
+  waitbar(.67,f,'Filtrowanie obrazu');
+pause(1)
+      
         
         
         PreProcessedImage3=[]
         PreProcessedImage3(:,:,1)=PreProcessedImage;
         PreProcessedImage3(:,:,2)=PreProcessedImage;
         PreProcessedImage3(:,:,3)=PreProcessedImage;
-
+waitbar(1,f,'Koniec');
+pause(1)
         PreProcessedImage=PreProcessedImage3;
         PreProcessedImage=uint8(PreProcessedImage);
 
-
+close(f)
 end
 
