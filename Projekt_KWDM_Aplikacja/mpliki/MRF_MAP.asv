@@ -9,7 +9,7 @@ function [X sum_U]=MRF_MAP(X,Y,GMM,k,g,MAP_iter,beta,show_plot)
 % Y=Y1;
 
 x=X(:);
-
+[rows, columns, numberOfColorChannels] = size(I);
 y=reshape(Y,[m*n 3]);
 
 sum_U_MAP=zeros(1,MAP_iter);
