@@ -1,5 +1,5 @@
 function [Y] = SegmentationImage2(PreProcessedImage)
-        Y=double(PreProcessedImage);
+  Y=double(PreProcessedImage);
 
         k=2; % k: number of regions
 
@@ -19,11 +19,8 @@ function [Y] = SegmentationImage2(PreProcessedImage)
         Y=Y*80;
 
         Y=uint8(Y);
- %OutImage=Y;
-
-
         
-        Y=im2gray(Y);
+                Y=im2gray(Y);
     Y=double(Y);
     
     statsa = glcm(Y,0,ShapeTexture);

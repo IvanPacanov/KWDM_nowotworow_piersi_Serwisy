@@ -1,4 +1,4 @@
-function [PreProcessedImage] = SegmentationImage(inputImage)
+function [PreProcessedImage] = SegmentationImage(InputImage)
         GrayScaleImage=im2gray(InputImage);
         NoisyImage=GrayScaleImage;
         NoisyImage=double(GrayScaleImage);
