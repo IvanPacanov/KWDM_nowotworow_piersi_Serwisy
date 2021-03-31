@@ -6086,23 +6086,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Mati\\.nuget\\packages\\": {},
-    "E:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\twaju\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Study\\Uczelnia_mgr\\Semestr_3\\KWDM\\KWDM_nowotworow_piersi_Serwisy\\Projekt_KWDM\\src\\User\\User.API\\User.API.csproj",
+      "projectUniqueName": "C:\\Users\\twaju\\Desktop\\semsestr_II_mgr\\KWDM\\KWDM_nowotworow_piersi_Serwisy\\Projekt_KWDM\\src\\User\\User.API\\User.API.csproj",
       "projectName": "User.API",
-      "projectPath": "E:\\Study\\Uczelnia_mgr\\Semestr_3\\KWDM\\KWDM_nowotworow_piersi_Serwisy\\Projekt_KWDM\\src\\User\\User.API\\User.API.csproj",
-      "packagesPath": "C:\\Users\\Mati\\.nuget\\packages\\",
-      "outputPath": "E:\\Study\\Uczelnia_mgr\\Semestr_3\\KWDM\\KWDM_nowotworow_piersi_Serwisy\\Projekt_KWDM\\src\\User\\User.API\\obj\\",
+      "projectPath": "C:\\Users\\twaju\\Desktop\\semsestr_II_mgr\\KWDM\\KWDM_nowotworow_piersi_Serwisy\\Projekt_KWDM\\src\\User\\User.API\\User.API.csproj",
+      "packagesPath": "C:\\Users\\twaju\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\twaju\\Desktop\\semsestr_II_mgr\\KWDM\\KWDM_nowotworow_piersi_Serwisy\\Projekt_KWDM\\src\\User\\User.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "E:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Mati\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\twaju\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -6180,7 +6180,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
