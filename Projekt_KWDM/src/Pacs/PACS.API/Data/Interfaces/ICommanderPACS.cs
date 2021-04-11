@@ -13,6 +13,8 @@ namespace PACS.API.Data.Interfaces
         List<string> FindSeries(string id, string studyInstanceUID);
         List<string> FindInstances(string id, string studyInstanceUID, string seriesInstanceUID);
         byte[] Move(string id, string studyInstanceUID, string seriesInstanceUID, string SOPInstanceUID);
+        bool SaveToFile(string file, string name);
+        string TakeFile(string name);
 
     }
 }

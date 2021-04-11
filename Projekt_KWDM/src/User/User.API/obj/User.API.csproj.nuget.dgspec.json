@@ -14,7 +14,8 @@
         "outputPath": "E:\\Study\\Uczelnia_mgr\\Semestr_3\\KWDM\\KWDM_nowotworow_piersi_Serwisy\\Projekt_KWDM\\src\\User\\User.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "E:\\Microsoft\\Xamarin\\NuGet\\"
+          "E:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\Mati\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -29,5 +29,15 @@ namespace User.API.Repository
             }
             return false;
         }
+        public bool CreateNewUser(Entities.User user)
+        {
+            var User = _userContext.User.Add(user);
+            if (User.State ==  Microsoft.EntityFrameworkCore.EntityState.Added)
+            {
+                _userContext.SaveChanges();
+                return true;
+            }            
+            return false;
+        }
     }
 }

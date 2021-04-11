@@ -80,10 +80,36 @@ namespace PACS.API.Controllers
         [HttpPost]
         [Route("[action]")]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
-        [ProducesResponseType(typeof(DicomInfo), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(TextInfo), (int)HttpStatusCode.OK)]
         public ActionResult Move([FromBody] DicomInfo imageInfo)
         {
             var results = _repository.Move(imageInfo.id, imageInfo.studyInstanceUID, imageInfo.seriesInstanceUID, imageInfo.SOPInstanceUID);
+            if (results != null)
+                return Ok(results);
+            else
+                return NotFound();
+        }
+
+
+        [HttpPost]
+        [Route("[action]")]
+        [ProducesResponseType((int)HttpStatusCode.NotFound)]
+        [ProducesResponseType(typeof(TextInfo), (int)HttpStatusCode.OK)]
+        public ActionResult SaveToFile(TextInfo text)
+        {
+            text.text = text.text.Replace("123#$!", "\n \n");
+            var results = _repository.SaveToFile(text.text, text.name);
+            if (results)
+                return Ok(results);
+            else
+                return NotFound();
+        }
+
+        [HttpPost]
+        [Route("[action]")]
+        public ActionResult TakeFile(TextInfo text)
+        {
+            var results = _repository.TakeFile(text.name);
             if (results != null)
                 return Ok(results);
             else

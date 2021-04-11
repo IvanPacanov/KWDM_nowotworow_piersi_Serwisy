@@ -9,5 +9,6 @@ namespace User.API.Repository
     {
         IEnumerable<Entities.User> GetAllUsers();
         bool CheckUser(Entities.User user);
+        bool CreateNewUser(Entities.User user);
     }
 }

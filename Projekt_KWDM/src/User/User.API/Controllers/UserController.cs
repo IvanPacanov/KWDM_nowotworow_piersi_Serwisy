@@ -19,7 +19,7 @@ namespace User.API.Controllers
             _repository = repository;
         }       
 
-        [HttpPost]
+        [HttpPost("[action]")]
         [ProducesResponseType(typeof(Entities.User), (int)HttpStatusCode.OK)]
         public ActionResult<Entities.User> GetUser([FromBody] Entities.User user)
         {
@@ -28,6 +28,18 @@ namespace User.API.Controllers
                 return Ok(IsUser);
 
             return  Ok("Niepoprawne dane logowania");
+        }
+
+
+        [HttpPost("[action]")]
+        [ProducesResponseType(typeof(Entities.User), (int)HttpStatusCode.OK)]
+        public ActionResult<Entities.User> CreateNewUser([FromBody] Entities.User user)
+        {
+            var IsUser = _repository.CreateNewUser(user);
+            if (IsUser)
+                return Ok(IsUser);
+
+            return Ok("Niepoprawne dane logowania");
         }
     }
 }

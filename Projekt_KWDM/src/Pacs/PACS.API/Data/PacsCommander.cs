@@ -223,5 +223,46 @@ namespace PACS.API.Data
             }
             return test;
         }
+
+        public bool SaveToFile(string file, string name)
+        {
+           
+            try
+            {
+                bool exists = System.IO.Directory.Exists($"{DateTime.Now.Date}.{DateTime.Now.Month}.{DateTime.Now.Year}");
+                if (!exists)
+                    System.IO.Directory.CreateDirectory($"{DateTime.Now.Date}.{DateTime.Now.Month}.{DateTime.Now.Year}");
+                using (StreamWriter writetext = new StreamWriter($"{DateTime.Now.Date}.{DateTime.Now.Month}.{DateTime.Now.Year}/{name}.txt"))
+                {
+                    writetext.WriteLine(file);
+                }
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public string TakeFile( string name)
+        {
+            bool exists = System.IO.Directory.Exists($"{DateTime.Now.Date}.{DateTime.Now.Month}.{DateTime.Now.Year}");
+            if (!exists)
+                return null;
+
+            string text = "";
+            try
+            {
+                using (StreamReader writetext = new StreamReader($"{DateTime.Now.Date}.{DateTime.Now.Month}.{DateTime.Now.Year}/{name}.txt"))
+                {
+                    text= writetext.ReadToEnd();
+                }
+                return text;
+            }
+            catch
+            {
+                return text;
+            }
+        }
     }
 }
